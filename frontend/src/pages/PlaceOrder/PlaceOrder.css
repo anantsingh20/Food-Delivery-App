@@ -26,7 +26,7 @@
     display: flex;
     gap: 10px;
 }
-.place-order-right{
+.placeorder-right{
     width: 100%;
     max-width: max(40%,500px);
 }

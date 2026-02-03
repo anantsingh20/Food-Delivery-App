@@ -13,11 +13,11 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-      <Link to='/'><img src={assets.logo} alt="" className='logo' /></Link>
+      <a href=''><img src={assets.logo} alt="" className='logo' /></a>
       <ul className='navbar-menu'>
-       <Link to='/'> <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</li></Link>
-        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</li>
-        <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</li>
+       <a href='#header'><li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</li></a>
+       <a href="#explore-menu"><li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</li></a>
+        <a href='#app-download'><li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</li></a>
         <li onClick={()=>setMenu("contact us")} className={menu==="contact us"?"active":""}>contact us</li>
       </ul>
       <div className="navbar-right">
